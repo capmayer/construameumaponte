@@ -1,0 +1,506 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lnag="pt">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Muli:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'core/css/style.css'%}"/>
+
+</head>
+
+<body>
+
+        <!-- div that contains horizonal scroll items -->
+        <nav class="navbar fixed-top">
+          <ul class="nav navbar-nav">
+            <li class="about"><a href="#about" class="nav-text"> sobre</a></li>
+            <li class="podcast"><a href="#podcast" class="nav-text"> podcast</a></li>
+            <li class="lambe-lambes"><a href="#lambe-lambes" class="nav-text"> lambe-lambes</a></li>
+            <li class="instagram"><a href="http://instagram.com/construameumaponte" class="nav-text" target="_blank" > instagram</a></li>
+            <li class="contact "><a href="#contact" class="nav-text-high"> fale conosco!</a></li>
+          </ul>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row flex-nowrap">
+            <div id="home" class="col-12">
+              <div class="logo">
+                <img src="{% static 'core/images/logo.png' %}">
+              </div>
+            </div>
+            <div id="about" class="col-12">
+              <div class="container-fluid margin-content">
+                <div class="row title">
+                  <div class="col">
+                    SOBRE
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col-10">
+                        <p class="text-left text-wrap">
+                          <span class="high">C</span>onstrua-me Uma Ponte é um projeto experimental de jornalismo
+                          transmídia realizado na Universidade Federal de Santa Maria (UFSM).
+                          O projeto foi desenvolvido dentro do Laboratório Experimental de Jornalismo.
+                        </p>
+                        <p class="text-left text-wrap">
+                          <span class="high">O</span> projeto busca, através das entrevistas nos prodcast, na curadoria de conteúdos no Instagram e dos
+                          lambe-lambes nas ruas, contar histórias e criar pontes
+                          entre quem convive com o adoecimento mental e aqueles que ainda estão distantes da discussão sobre saúde
+                          mental. Um tema que, no fim das contas, diz respeito não somente à quem adoece, mas a sociedade como um todo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6" style="margin-left:-50px;">
+                        <div class="row" style="margin-bottom: 10px;">
+                          <div class="col-4">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/Nina.png' %}" alt="Nina">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Maria Helena
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Autora, Acadêmica de Jornalismo UFSM
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/laura.png' %}" alt="laura">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Laura Storch
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Orientadora
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/Lucas.png' %}" alt="lucas">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Lucas Duur Missau
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Co-orientação
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/Tay.png' %}" alt="tay">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Taynane Senna
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Identidade Visual e Programação Visual
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/GABI.png' %}" alt="gabi">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Gabriela Nehring
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Ilustração do site
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <img src="{% static 'core/images/Henrique.png' %}" alt="rique">
+                              </div>
+                              <div class="col-12 nome text-center">
+                                Henrique Mayer
+                              </div>
+                              <div class="col-12 text-wrap text-center job">
+                                Programação da página
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="podcast" class="col-12">
+              <div class="container-fluid margin-content">
+                <div class="row title">
+                  <div class="col">
+                    PODCAST
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col-10">
+                        <p class="text-left text-wrap">
+                          <span class="high">N</span>arrar é construir nossa história.
+                          Nos conectamos com o outro através das nossas narrativas.
+                          Em uma série de seis episódios serão contadas as histórias
+                          de quem tem sua trajetória marcada pelo convívio com o
+                          adoecimento mental.
+                        </p>
+                        <p class="text-left text-wrap">
+                          <span class="high">S</span>ão três episódios focados nas experiências pessoais e três
+                          episódios temáticos, que trazem recortes que nos permitem
+                          ampliar a discussão sobre saúde mental e compreender um pouco da complexidade desse tema.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <iframe width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-1-janine%2F" frameborder="0" ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6" style="margin-left:-50px;">
+                        <div class="row" style="margin-bottom: 20px;">
+                          <div class="col-4">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-1-janine/" target="_blank">
+                                  <img src="{% static 'core/images/ep1.png' %}" width="170" height="170" alt="Nina">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-2-especial-negritude-e-saúde-mental/" target="_blank">
+                                  <img src="{% static 'core/images/ep2.png' %}" width="170" height="170" alt="laura">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-3-eduardo/" target="_blank">
+                                  <img src="{% static 'core/images/ep3.png' %}" width="170" height="170" alt="lucas">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-4-especial-saúde-mental-lgbt/" target="_blank">
+                                  <img src="{% static 'core/images/ep4.png' %}" width="170" height="170" alt="tay">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-5-marcia/" target="_blank">
+                                  <img src="{% static 'core/images/ep5.png' %}" width="170" height="170" alt="gabi">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4" style="margin-left:-40px;">
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-6-especial-saúde-mental-na-universidade/" target="_blank">
+                                  <img src="{% static 'core/images/ep6.png' %}" width="170" height="170" alt="rique">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div id="lambe-lambes" class="col-12">
+              <div class="container-fluid margin-content">
+                <div class="row title">
+                  <div class="col">
+                    LAMBE-LAMBES
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col-10">
+                        <p class="text-left text-wrap">
+                          <span class="high">D</span>urante muito tempo, todos que não eram considerados
+                          "normais", o louco, o desviante, o que sofre, foram isolados do
+                          convívio social. Suas existências foram apagadas dentro de
+                          hospitias psiquiátricos, suas histórias esquecidas.
+                        </p>
+                        <p class="text-left text-wrap">
+                          <span class="high">L</span>evar os lambe-lambes, com frases, ilustrações e dados sobre
+                          essas pessoas, é uma forma de devolver essas pessoas para a
+                          cidade, retirá-las da invisibilidade e criar uma ponte entre suas
+                          vivências e a sociedade.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6" style="margin-left:-100px;">
+                        <div class="row" style="margin-bottom: 20px;">
+                          <div class="col-3">
+
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/ina.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/ina.png' %}" alt="Nina">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/ina.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/me.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/me.png' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/me.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/bipolar.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/bipolar.png' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/bipolar.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/cem.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/cem.jpg' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/cem.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3">
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/letras.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/letras.png' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/letras.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/er.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/er.png' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/er.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/espelho.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/espelho.png' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/espelho.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-3">
+
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <a href="{% static 'core/pdf/mntr.pdf'%}" target="_blank">
+                                    <img src="{% static 'core/images/mntr.jpg' %}" width="150" height="212" alt="laura">
+                                  </a>
+                                </div>
+                                <div class="col-12 text-wrap text-center baixar">
+                                  <a href="{% static 'core/pdf/mntr.pdf'%}" target="_blank">
+                                    Clique para baixar!
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div id="contact" class="col-12">
+              <div class="container-fluid margin-content">
+                <div class="row title">
+                  <div class="col">
+                    FALE CONOSCO
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!--
+        <div class="surroundContainer">
+          <div class="container-fluid">
+            <div id="home" class="page">
+              <div class="logo">
+                <img src="images/logo.png">
+              </div>
+            </div>
+
+            <div id="about" class="page minus-margin">
+                <div class="row title">
+                  <div class="col">
+                    SOBRE
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-left text-wrap">
+                      <span class="high">C</span>onstrua-me Uma Ponte é um projeto experimental de jornalismo
+                      transmídia realizado na Universidade Federal de Santa Maria (UFSM).
+                      O projeto foi desenvolvido dentro do Laboratório Experimental de Jornalismo.
+                    </p>
+                    <p class="text-left text-wrap">
+                      <span class="high">O</span> projeto busca, através das entrevistas nos prodcast, na curadoria de conteúdos no Instagram e dos
+                      lambe-lambes nas ruas, contar histórias e criar pontes
+                      entre quem convive com o adoecimento mental e aqueles que ainda estão distantes da discussão sobre saúde
+                      mental. Um tema que, no fim das contas, diz respeito não somente à quem adoece, mas a sociedade como um todo.
+                    </p>
+                  </div>
+                  <div class="col-6">
+
+                  </div>
+                </div>
+
+            </div>
+
+            <div id="podcast" class="page">
+              <div class="row title">
+                <div class="col">
+                  SOBRE
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <p class="text-left text-wrap">
+                    <span class="high">C</span>onstrua-me Uma Ponte é um projeto experimental de jornalismo
+                    transmídia realizado na Universidade Federal de Santa Maria (UFSM).
+                    O projeto foi desenvolvido dentro do Laboratório Experimental de Jornalismo.
+                  </p>
+                  <p class="text-left text-wrap">
+                    <span class="high">O</span> projeto busca, através das entrevistas nos prodcast, na curadoria de conteúdos no Instagram e dos
+                    lambe-lambes nas ruas, contar histórias e criar pontes
+                    entre quem convive com o adoecimento mental e aqueles que ainda estão distantes da discussão sobre saúde
+                    mental. Um tema que, no fim das contas, diz respeito não somente à quem adoece, mas a sociedade como um todo.
+                  </p>
+                </div>
+                <div class="col-6">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div id="lambe-lambes" class="page">
+              <div class="row title">
+                <div class="col">
+                  SOBRE
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <p class="text-left text-wrap">
+                    <span class="high">C</span>onstrua-me Uma Ponte é um projeto experimental de jornalismo
+                    transmídia realizado na Universidade Federal de Santa Maria (UFSM).
+                    O projeto foi desenvolvido dentro do Laboratório Experimental de Jornalismo.
+                  </p>
+                  <p class="text-left text-wrap">
+                    <span class="high">O</span> projeto busca, através das entrevistas nos prodcast, na curadoria de conteúdos no Instagram e dos
+                    lambe-lambes nas ruas, contar histórias e criar pontes
+                    entre quem convive com o adoecimento mental e aqueles que ainda estão distantes da discussão sobre saúde
+                    mental. Um tema que, no fim das contas, diz respeito não somente à quem adoece, mas a sociedade como um todo.
+                  </p>
+                </div>
+                <div class="col-6">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div id="contact" class="page">
+
+            </div>
+          </div>
+        </div>-->
+        <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script
+        src="{% static 'core/js/script.js' %}"=></script>
+</body>
+</html>
