@@ -95,6 +95,14 @@ a:link {
   color: white;
   margin-top: 5px;
 }
+form{
+  font-family: 'Muli';
+}
+.mb {
+  background-color: white;
+  border-radius: 12px;
+  font-family: 'Muli';
+}
 
 /*
 #container .box {

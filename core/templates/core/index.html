@@ -170,7 +170,12 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <iframe width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-1-janine%2F" frameborder="0" ></iframe>
+                        <iframe id="f0" width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-1-janine%2F" frameborder="0" ></iframe>
+                        <iframe id="f1" hidden width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-2-especial-negritude-e-sa%C3%BAde-mental%2F" frameborder="0" ></iframe>
+                        <iframe id="f2" hidden width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-3-eduardo%2F" frameborder="0" ></iframe>
+                        <iframe id="f3" hidden width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-4-especial-sa%C3%BAde-mental-lgbt%2F" frameborder="0" ></iframe>
+                        <iframe id="f4" hidden width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-5-marcia%2F" frameborder="0" ></iframe>
+                        <iframe id="f5" hidden width="600" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FConstruameumaponte%2Fepis%C3%B3dio-6-especial-sa%C3%BAde-mental-na-universidade%2F" frameborder="0" ></iframe>
                       </div>
                     </div>
                   </div>
@@ -178,8 +183,8 @@
                         <div class="row" style="margin-bottom: 20px;">
                           <div class="col-4">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-1-janine/" target="_blank">
+                              <div class="col-12 text-center f0">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep1.png' %}" width="170" height="170" alt="Nina">
                                 </a>
                               </div>
@@ -187,8 +192,8 @@
                           </div>
                           <div class="col-4" style="margin-left:-40px;">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-2-especial-negritude-e-saúde-mental/" target="_blank">
+                              <div class="col-12 text-center f1">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep2.png' %}" width="170" height="170" alt="laura">
                                 </a>
                               </div>
@@ -196,8 +201,8 @@
                           </div>
                           <div class="col-4" style="margin-left:-40px;">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-3-eduardo/" target="_blank">
+                              <div class="col-12 text-center f2">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep3.png' %}" width="170" height="170" alt="lucas">
                                 </a>
                               </div>
@@ -207,8 +212,8 @@
                         <div class="row">
                           <div class="col-4">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-4-especial-saúde-mental-lgbt/" target="_blank">
+                              <div class="col-12 text-center f3">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep4.png' %}" width="170" height="170" alt="tay">
                                 </a>
                               </div>
@@ -216,8 +221,8 @@
                           </div>
                           <div class="col-4" style="margin-left:-40px;">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-5-marcia/" target="_blank">
+                              <div class="col-12 text-center f4">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep5.png' %}" width="170" height="170" alt="gabi">
                                 </a>
                               </div>
@@ -225,8 +230,8 @@
                           </div>
                           <div class="col-4" style="margin-left:-40px;">
                             <div class="row">
-                              <div class="col-12 text-center">
-                                <a href="https://www.mixcloud.com/Construameumaponte/episódio-6-especial-saúde-mental-na-universidade/" target="_blank">
+                              <div class="col-12 text-center f5">
+                                <a href="#podcast">
                                   <img src="{% static 'core/images/ep6.png' %}" width="170" height="170" alt="rique">
                                 </a>
                               </div>
@@ -395,6 +400,44 @@
                 <div class="row title">
                   <div class="col">
                     FALE CONOSCO
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+
+                    <form method="POST" class="post-form">{% csrf_token %}
+                      <div class="row">
+                        <div class="col" style="margin-top: 15px;">
+                          {{ contatoForm.nome }}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col"style="margin-top: 20px;">
+
+                          {{ contatoForm.email }}
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col"style="margin-top: 20px;">
+
+                          {{ contatoForm.assunto }}
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col"style="margin-top: 20px;">
+
+                          {{ contatoForm.menssagem }}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col"style="margin-left: 390px;">
+                          <button type="submit" class="mb btn">Enviar</button>
+                        </div>
+                      </div>
+                    </form>
+
                   </div>
                 </div>
               </div>
