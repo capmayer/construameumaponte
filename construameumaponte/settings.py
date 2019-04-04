@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
-    'whitenoise.runserver_nostatic',
-    'django.contrib.staticfiles',
+    #'whitenoise.runserver_nostatic',
+    #'django.contrib.staticfiles',
     'core',
 ]
 
@@ -119,7 +119,8 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['construameumaponte.tk', 'www.construameumaponte.tk']
+#ALLOWED_HOSTS = ['construameumaponte.tk', 'www.construameumaponte.tk']
+ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -143,11 +144,11 @@ EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PSW']
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-# Configs for production
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-X_FRAME_OPTIONS = 'DENY'
+
+handler404 = 'core.views.page_not_found'
+handler500 = 'core.views.server_error'
+handler403 = 'core.views.no_permission'
+handler400 = 'core.views.bad_request'
+
 # Activate Django-Heroku.
 django_heroku.settings(locals())

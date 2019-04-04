@@ -19,3 +19,15 @@ def home(request):
     else:
         contato = ContatoForm()
     return render(request, 'core/index.html', {'contatoForm':contato})
+
+def page_not_found(request):
+    return render(request, 'core/html404.html', {})
+
+def server_error(request):
+    return render(request, 'core/html500.html', {})
+
+def no_permission(request):
+    return render(request, 'core/html403.html', {})
+
+def bad_request(request):
+    return render(request, 'core/html400.html', {})
