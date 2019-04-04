@@ -143,5 +143,11 @@ EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PSW']
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+# Configs for production
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
