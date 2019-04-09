@@ -12,7 +12,7 @@ def home(request):
                 post.nome +" "+ post.assunto,
                 post.menssagem,
                 post.email,
-                ['hmayer@inf.ufsm.br'], fail_silently=False
+                ['lexufsm@gmail.com'], fail_silently=False
             )
             post.save()
             return redirect('home')

@@ -33,7 +33,6 @@ body {
   display: inline-block;
   float:none;
   margin: 8px;
-  padding-top: 20px;
 }
 .nav-text{
   font-family: 'Muli';
@@ -103,7 +102,11 @@ form{
   border-radius: 12px;
   font-family: 'Muli';
 }
-
+.logo-nav{
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+}
 /*
 #container .box {
   width:100vw;

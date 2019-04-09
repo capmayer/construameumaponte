@@ -20,6 +20,7 @@ $(document).ready(function() {
         document.getElementById("contact").scrollIntoView({behavior: "smooth"});
         return false;
     });
+
     $('.f0').click(function() {
       document.getElementById("f0").hidden = false;
       document.getElementById("f1").hidden = true;
